@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendee Profiles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Green Curved Edge -->
+    <div class="header">
+        <h1>Attendee Profiles</h1>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search Employees Name or Serial Number">
+    </div>
+
+    <!-- Attendees Directory -->
+    <div id="attendees-directory">
+        <!-- Attendee cards will be inserted here dynamically -->
+    </div>
+
+    <!-- Modal for Attendee Profile -->
+    <div id="attendee-profile-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <div id="attendee-profile-details">
+                <div id="personal-details" class="section">
+                    <h2 id="attendee-name"></h2>
+                    <p class="serial-number">Serial: <span id="serial-number"></span></p>
+                    <div id="attendee-photo">
+                        <img src="" alt="Attendee Photo" id="attendee-photo-img" class="attendee-photo">
+                    </div>
+                    <div id="personal-details-text">
+                        <p><strong>Department:</strong> <span id="department"></span></p>
+                        <p><strong>Work Position:</strong> <span id="work-position"></span></p>
+                    </div>
+                </div>
+
+                <div id="timeline" class="section">
+                    <h3>Timeline</h3>
+                    <button id="assign-event-btn">Assign to an Event</button>
+                    <button id="attendance-btn">Check Current Attendance</button>
+                    <table id="attendance-table">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Login Time</th>
+                                <th>Logout Time</th>
+                                <th>Date</th>
+                                <th>Remarks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Attendance data will be added here dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="session-reports" class="section">
+                    <h3>Session Reports</h3>
+                    <table id="session-report-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Event/Activity</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Session reports will be added here dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
