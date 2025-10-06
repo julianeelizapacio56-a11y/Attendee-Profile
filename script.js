@@ -1,3 +1,38 @@
+// Mock data for demonstration purposes
+const attendees = [
+    {
+        id: '12345AB',
+        name: 'John Doe',
+        department: 'IT',
+        workPosition: 'Developer',
+        photo: 'https://randomuser.me/api/portraits/men/1.jpg',
+        attendance: [
+            {
+                event: 'Cybersecurity Upgrade',
+                login: '4:00 PM',
+                logout: '6:00 PM',
+                date: 'Oct. 5, 2025',
+                remarks: 'Assisted with security patch implementation.'
+            },
+            { event: 'Workshop', login: '10:00 AM', logout: '4:00 PM', date: '2023-10-05', remarks: 'Helped with coding exercises.' }
+        ],
+        sessionReports: [
+            { date: '2023-10-01', activity: 'Tech Conference', notes: 'Helped with backend implementation.' },
+            { date: '2023-10-05', activity: 'Workshop', notes: 'Assisted in coding session.' }
+        ]
+    },
+    {
+        id: '23456CD',
+        name: 'Jane Smith',
+        department: 'HR',
+        workPosition: 'Manager',
+        photo: 'https://randomuser.me/api/portraits/women/1.jpg',
+        attendance: [
+            { event: 'HR Conference', login: '8:30 AM', logout: '4:30 PM', date: '2023-10-02', remarks: 'Organized team-building activities.' }
+        ],
+        sessionReports: [
+            { date: '2023-10-02', activity: 'HR Conference', notes: 'Facilitated employee feedback sessions.' }
+        ]
     }
 ];
 
